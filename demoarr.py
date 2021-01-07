@@ -1,11 +1,13 @@
 import sys
-from prettytable import PrettyTable 
-
+#from prettytable import PrettyTable 
+'''
 t = PrettyTable()
 
 t.field_names = ["Tanggal", "Nama Transaksi", "Jumlah Transaksi"]
 t.add_row([0, "Indomaret", 30000])
 t.add_row([1, "Alfamart", 4999])
+'''
+listTemp = []
 jumlah = 0
 transaksi = []
 nama = input("Halo user silahkan input nama anda :")
@@ -33,7 +35,7 @@ while True:
     if userinput == '1':
         x = len(listTemp)
         print(x)
-        listTemp.insert(x+1, transaksi)
+        #listTemp.insert(x+1, transaksi)
         tanggal = int(input("tanggal transaksi"))
         namaTransaksi = input("Jenis transaksi : ")
         jumlahTransaksi = int(input("Jumlah transaksi : "))
@@ -41,5 +43,7 @@ while True:
         transaksi.append(tanggal)
         transaksi.append(namaTransaksi)
         transaksi.append(jumlahTransaksi)
-        listTemp.append(transaksi)
+        #listTemp.append(transaksi)
+        listTemp.insert(x+1, transaksi)
+        transaksi = []
         print(listTemp)
