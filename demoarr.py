@@ -3,8 +3,8 @@ import sys
 listTemp = []
 jumlah = 0
 transaksi = []
-nama = input("Halo user silahkan input nama anda :")
-bulan = input("inputkan bulan pembukuan :")
+nama = input("Halo user silahkan input nama anda : ")
+bulan = input("inputkan bulan pembukuan : ")
 
 
 while True:
@@ -43,6 +43,5 @@ while True:
              listTemp.insert(arr+1, transaksi)
            
         transaksi = []
-        print(listTemp)
         print("Data Tersimpan")
 
