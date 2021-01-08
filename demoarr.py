@@ -6,6 +6,7 @@ transaksi = []
 nama = input("Halo user silahkan input nama anda :")
 bulan = input("inputkan bulan pembukuan :")
 
+
 while True:
     x = len(listTemp)
     print('tekan (1) untuk input data, (2) untuk print data input, (q) keluar program')
@@ -44,3 +45,4 @@ while True:
         transaksi = []
         print(listTemp)
         print("Data Tersimpan")
+
